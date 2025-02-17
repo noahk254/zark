@@ -1,0 +1,296 @@
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+
+/* Container */
+.certificate-container {
+    background: rgba(128, 128, 128, 0.6);
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    align-content: center;
+}
+
+.sample-cert {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    border-radius: 5%;
+    position: relative;
+    display: block;
+}
+
+/* Main Section */
+.content-1 {
+    display: flex;  /* Enables side-by-side layout */
+    justify-content: space-between; /* Creates space between elements */
+    align-items: center; /* Aligns items vertically */
+    background: white;
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.content-1-container {
+    flex: 1;
+    text-align: left;
+    padding-right: 20px;
+    width: 100%;
+    max-width: 900px;
+}
+
+
+.nacc {
+    display: flex;
+}
+
+.nacc img {
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+    padding: 0.1rem;
+}
+
+
+/* Left Content */
+.content-container {
+    flex: 1; /* Takes remaining space */
+    text-align: left;
+    padding-right: 20px;
+}
+   
+
+.content-1-icons {
+    display: flex;
+    justify-content: center;
+    opacity: 1;
+    gap: 8px;
+}
+
+.content-1-icons img {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    padding: 0.4rem;
+    vertical-align: middle;
+    
+}
+
+.profile-container {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.sign-in{
+    margin-bottom: 20px;
+    font-size: 14px;
+    text-decoration: none !important;
+    font-weight: bold;
+}
+.sign-in:hover{
+    text-decoration: underline;
+}
+.profile-avatar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.avatar {
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    
+}
+.profile-info {
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.view-credentials {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+}
+.view-credentials:hover {
+    text-decoration: none;
+}
+
+
+/* Right Share Card */
+.share-card {
+    flex: 1; /* Takes equal space as .content-container */
+    background: black;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    color: white;
+}
+
+/* Share Header - Flexbox for text and badge */
+.share-header {
+    display: flex;
+    justify-content: space-between; /* Places text on the left and image on the right */
+    align-items: center;
+}
+
+/* Share Text (h2 and p) */
+.share-text {
+    text-align: left; /* Aligns text to the left */
+    color: white;
+}
+
+/* Quality Badge */
+.quality-badge {
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+    margin-left: 10px;
+}
+
+.share-icons {
+    display: flex;
+    justify-content: center;
+}
+
+/* Share Icons */
+.share-icons img {
+    width: 40px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+    padding: 0.4rem;
+    size: 0rem;
+}
+
+/* Button */
+.linkedin {
+    background: #0077B5;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.linkedin:hover {
+    opacity: 0.8;
+}
+
+/*section*/
+.nacc img {
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+    padding: 0.1rem;
+}
+
+.card shadow-lg p-4 {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 20px;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+h3 {
+    color: #0056b3;
+    text-align: center;
+    font-size: 26px;
+}
+
+p {
+    color: #003366;
+    
+    padding-bottom: 5px;
+}
+
+p {
+    font-size: 16px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Style the certification module list */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #ffffff;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border-left: 5px solid #0056b3;
+   
+}
+
+ul li:hover {
+    background: #e6f7ff;
+}
+
+/* Highlighting the issued and expiry dates */
+.col-md-6 {
+    background: #eaf5ea;
+    padding: 10px;
+    border-left: 5px solid black;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+
+.arrow-link::after {
+    content: " →";
+    margin-left: 5px;
+    color: blue;
+    transition: transform 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+.custom-footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    font-size: 14px;
+}
+.custom-footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+.custom-footer a:hover {
+    text-decoration: underline;
+}
+
+
