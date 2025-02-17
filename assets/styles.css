@@ -12,10 +12,10 @@ body {
 .certificate-container {
     background: rgba(128, 128, 128, 0.6);
     padding: 20px;
-    max-width: 800px;
+    max-width: 1300px;
     margin: auto;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+   /* border-radius: 8px;*/
     align-content: center;
 }
 
@@ -23,7 +23,7 @@ body {
     width: 100%;
     max-width: 400px;
     margin: 20px auto;
-    border-radius: 5%;
+    /*border-radius: 5%;*/
     position: relative;
     display: block;
 }
@@ -35,7 +35,7 @@ body {
     align-items: center; /* Aligns items vertically */
     background: white;
     padding: 20px;
-    max-width: 900px;
+    max-width: 1300px;
     margin: auto;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -46,7 +46,7 @@ body {
     text-align: left;
     padding-right: 20px;
     width: 100%;
-    max-width: 900px;
+    max-width: 1200px;
 }
 
 
@@ -66,7 +66,12 @@ body {
 .content-container {
     flex: 1; /* Takes remaining space */
     text-align: left;
-    padding-right: 20px;
+    padding-left: 20px;
+    margin-left: 20px;
+}
+h3{
+    padding-left: 0;
+    margin-left: 0;
 }
    
 
@@ -74,14 +79,14 @@ body {
     display: flex;
     justify-content: center;
     opacity: 1;
-    gap: 8px;
+    gap: 4px;
 }
 
 .content-1-icons img {
     width: 30px;
     height: 30px;
-    margin-right: 5px;
-    padding: 0.4rem;
+    margin-right: 2px;
+    padding: 8px;
     vertical-align: middle;
     
 }
@@ -142,11 +147,12 @@ body {
 /* Right Share Card */
 .share-card {
     flex: 1; /* Takes equal space as .content-container */
-    background: black;
+    background: rgb(1, 1, 87);
     padding: 20px;
     text-align: center;
     border-radius: 8px;
     color: white;
+    max-width: 400px;
 }
 
 /* Share Header - Flexbox for text and badge */
@@ -187,8 +193,8 @@ body {
 
 /* Button */
 .linkedin {
-    background: #0077B5;
-    color: white;
+    background: white;
+    color: #0077B5;
     border: none;
     padding: 10px 15px;
     font-size: 14px;
@@ -209,22 +215,29 @@ body {
     padding: 0.1rem;
 }
 
-.card shadow-lg p-4 {
+.card-large-shadow-lg p-4 {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
     color: #333;
     margin: 20px;
     padding: 20px;
     line-height: 1.6;
+    justify-content: space-between;
+    align-items: flex-start;
+    display: flex;
+    position: relative;
+    width: 100%;
+    border: 1px solid#ccc;
 }
 
-h3 {
-    color: #0056b3;
-    text-align: center;
-    font-size: 26px;
-}
+
 
 p {
+    flex: 1;
+    margin-right: 20px;
+}
+
+/*p {
     color: #003366;
     
     padding-bottom: 5px;
@@ -249,7 +262,7 @@ ul {
     padding: 0;
 }
 
-ul li {
+/*ul li {
     background: #ffffff;
     margin: 5px 0;
     padding: 10px;
@@ -264,13 +277,90 @@ ul li:hover {
 
 /* Highlighting the issued and expiry dates */
 .col-md-6 {
-    background: #eaf5ea;
-    padding: 10px;
-    border-left: 5px solid black;
-    margin-top: 15px;
-    font-weight: bold;
+    display: flex;
+    gap: 10px;
+}    
+ul{
+    list-style-type: disc;/*use dots as bullets*/
+    flex: 1;
+    margin-right: 20px;
 }
 
+.card-custom-card-shadow-lg{
+    display: flex;
+    justify-content: flex-end;
+    width: 400px;
+    gap: 20px;
+    
+}
+
+.custom-card{
+    width: 400px;
+    margin-left: auto;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.white-button {
+    background-color: white !important;
+    color: black !important;
+    border: 2px solid black !important;
+    width: 100% !important; /* Ensure the button takes full width */
+    max-width: 300px; /* Adjust width */
+    display: block !important; /* Ensure width is applied */
+    text-align: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+    appearance: none;
+    outline: none;
+    box-shadow: none !important; /* Remove unwanted shadow */
+}
+.white-button:hover, 
+.white-button:focus, 
+.white-button:active {
+    background-color: white !important; 
+    color: black !important;
+    border: 2px solid black !important;
+    box-shadow: none !important;
+}
+
+.card-special-card-shadow-lg{
+    display: flex;
+    justify-content: flex-end;
+    width: 400px;
+        
+}
+
+.special-card{
+    width: 400px;
+    margin-left: auto;
+    margin-bottom: 20px;
+}
+
+.white-button {
+    background-color: white !important;
+    color: black !important;
+    border: 1px solid grey !important;
+    width: 100% !important; /* Ensure the button takes full width */
+    max-width: 350px; /* Adjust width */
+    display: block !important; /* Ensure width is applied */
+    text-align: center;
+    padding: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+    appearance: none;
+    outline: none;
+    box-shadow: none !important; /* Remove unwanted shadow */
+}
+.white-button:hover, 
+.white-button:focus, 
+.white-button:active {
+    background-color: white !important; 
+    color: black !important;
+    border: 2px solid black !important;
+    box-shadow: none !important;
+}
 
 .arrow-link::after {
     content: " →";
@@ -278,6 +368,28 @@ ul li:hover {
     color: blue;
     transition: transform 0.2s ease-in-out;
     text-decoration: none;
+}
+
+.graph{
+    width: 300px;
+    height: 300px;
+    margin-top: 40px;
+}
+
+.icon{
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    margin-left: 10px;
+    
+}
+
+.line{
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    margin-left: 10px;
+    
 }
 
 .custom-footer {
