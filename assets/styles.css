@@ -9,6 +9,21 @@ body {
 
 
 /* Container */
+@media screen and (max-width: 480px) {
+    .certificate-container,
+    .content-1 {
+        padding: 10px;
+    }
+    .white-button {
+        width: 100%;
+        max-width: 100%;
+    }
+    .profile-avatar {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 .certificate-container {
     background: rgba(128, 128, 128, 0.6);
     padding: 20px;
@@ -29,6 +44,26 @@ body {
 }
 
 /* Main Section */
+@media screen and (max-width: 768px) {
+    .content-1 {
+        flex-direction: column;
+        text-align: center;
+    }
+    .share-card {
+        max-width: 100%;
+    }
+    .card-custom-card-shadow-lg {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .custom-card,
+    .special-card {
+        width: 90%;
+        max-width: 100%;
+    }
+}
+
 .content-1 {
     display: flex;  /* Enables side-by-side layout */
     justify-content: space-between; /* Creates space between elements */
@@ -46,7 +81,6 @@ body {
     text-align: left;
     padding-right: 20px;
     width: 100%;
-    max-width: 1200px;
 }
 
 
@@ -112,6 +146,8 @@ h3{
     align-items: center;
     gap: 10px;
     margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
 }
 .avatar {
     width: 30px;
@@ -178,6 +214,7 @@ h3{
 .share-icons {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 /* Share Icons */
@@ -288,17 +325,20 @@ ul{
 
 .card-custom-card-shadow-lg{
     display: flex;
-    justify-content: flex-end;
-    width: 400px;
+    justify-content: space-between;
+    width: 100%;
     gap: 20px;
+    flex-wrap: wrap;
     
 }
 
 .custom-card{
-    width: 400px;
+    min-width: 200px;
     margin-left: auto;
     margin-bottom: 20px;
     gap: 20px;
+    max-width: 100%;
+    flex: 1;
 }
 
 .white-button {
@@ -327,15 +367,20 @@ ul{
 
 .card-special-card-shadow-lg{
     display: flex;
-    justify-content: flex-end;
-    width: 400px;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
         
 }
 
 .special-card{
-    width: 400px;
+    min-width: 200px;
     margin-left: auto;
     margin-bottom: 20px;
+    max-width: 100%;
+    flex: 1;
+    gap: 20px;
 }
 
 .white-button {
@@ -346,7 +391,7 @@ ul{
     max-width: 350px; /* Adjust width */
     display: block !important; /* Ensure width is applied */
     text-align: center;
-    padding: 5px;
+    padding: 15px 30px;
     font-size: 16px;
     transition: background-color 0.3s, color 0.3s;
     appearance: none;
@@ -360,6 +405,12 @@ ul{
     color: black !important;
     border: 2px solid black !important;
     box-shadow: none !important;
+}
+
+@media screen and (max-width: 768px) {
+    .white-button {
+        max-width: 100%;
+    }
 }
 
 .arrow-link::after {
@@ -396,6 +447,7 @@ ul{
     background-color: #f8f9fa;
     padding: 20px 0;
     font-size: 14px;
+    text-align: center;
 }
 .custom-footer a {
     color: #007bff;
